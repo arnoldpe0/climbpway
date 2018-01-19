@@ -22,8 +22,8 @@ class Footer extends Component {
           </Link>
           <h4>
             Based on{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
-              Gatsby Advanced Starter
+            <a href="https://github.com/gatsbyjs/gatsby">
+              Climb Pway
             </a>.
           </h4>
         </div>
