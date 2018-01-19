@@ -36,6 +36,6 @@ module.exports = {
     }
   ],
   copyright: "Copyright © 2017. Peter Arnold", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+  themeColor: "#E95A7D", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#F3E8EE" // Used for setting manifest background color.
 };
