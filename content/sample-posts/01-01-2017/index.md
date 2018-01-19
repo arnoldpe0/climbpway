@@ -1,67 +1,23 @@
 ---
-title: "Bold Mage"
-cover: "https://unsplash.it/400/300/?random?BoldMage"
+title: "Teenage Heartthrob"
+cover: "https://pics.me.me/this-is-a-little-savage-memegenerator-net-21740241.png"
 date: "01/01/2017"
-category: "tech"
+category: "slab"
 tags:
-    - programming
-    - stuff
-    - other
+    - oh wow
+    - savage
+    - cats
 ---
 # Quanto et ius coniunctis urbes
 
 ## Sedisti civiliter
 
-Lorem **markdownum** Ixione palus **semper peritura barbaque** in aureus
-obliquum erigitur gemmae utque cur natus, aera supplice de nudae. Manus
-ambrosiam tendens, saecula tenet, conponere et ense et cucurri. Tantique
-animalia praeceps Meleagre greges venisse corpore et ignara, umquam ipse? Quam
-*Talibus ausis*.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate, nunc eu congue porttitor, tortor nulla consequat augue, nec varius erat eros in velit. Maecenas eu rhoncus augue, nec scelerisque arcu. Donec tincidunt sapien leo, eu mattis neque fermentum vitae. In interdum mollis orci eget sollicitudin. Nulla facilisi. Phasellus et vulputate velit. Etiam non nulla ac eros consectetur efficitur sed ut tortor. Sed quam nibh, semper non commodo quis, porta ac diam. Vivamus id porta nisi, et mattis sapien. Aliquam convallis lacus purus, nec porttitor turpis dignissim sed.
 
 ## Vultusque subsequitur Pallas regis datis inde animaque
 
-At securim cautum capitis, creatos sanguinis turbant iam concita videor, edere.
-Alis genas rudis felix quas **longum** suorum manu ante prima **usque**. Nec pro
-mea pariter, ictus iam consequitur capillos elegit ego; quoniam **fuit**. Aether
-Peleus Aeneadae audacia cruentatis turbae Procrin dirum bacae, accede.
-
-```php
-    urlLinkedin.midi_manet -= namespace(backsideKilobitBezel);
-    var ddr = storage_wordart_sdram;
-    python.raw_backlink = rfid_load - 4;
-    kibibyte *= cdnThumbnailUri;
-```
+Maecenas et blandit ex. Integer dignissim rhoncus consequat. Sed vehicula mollis velit eget eleifend. Vivamus molestie tempus elit. Aenean commodo leo urna, non tincidunt tortor interdum vel. Sed est metus, pharetra ut elit tempor, viverra molestie augue. Aenean vitae gravida magna, sit amet dapibus est. Donec vel lorem id nisl commodo tempor vitae non diam. In quis tincidunt dui, a pulvinar magna. Sed nec cursus lacus. In tincidunt mi eget libero suscipit, ac varius augue pharetra.
 
 ## Fortis dextrae humo limina Tempus singultibus illa
 
-Nate muros orbe [patris](http://debebuntilla.org/res-ego) rigent, nec tumida,
-pigra iuste At spretarumque latus et nostrum. Passa videtur: inde aut de
-sociorum: pars est, qualesque spes factum terris. Custodia sum animumque; iubet
-in pulvere carus, relinquunt incitat. Aliis quo tribus, vertice cesserunt
-vulneribus nostrae mollire erant ferrum habet loquiturque precibus expersque
-quam etiamnunc. Puraque [repetitque](http://mihi-aiax.io/suaferunt.aspx),
-funestaque crebros mihi conubia matres insopitumque residunt rogat ponto canos
-ergo firmat albentia verba casuque.
-
-```perl
-    if (lion_vdu + vrml_upnp - redundancyAccessPharming) {
-        driveProcessor = floatingWord(commerceDockRestore(database));
-    } else {
-        partition_source_thunderbolt = -2 + tokenStateArchive /
-                teraflops_gigahertz;
-    }
-    exabytePhpMacintosh -= graphic_cycle(expression, memory(ideFatMatrix,
-            controlInboxMode), 50) + -3;
-    buffer_apple_hdmi += viralSync + internetDigital / tweak_perl_expansion(
-            masterNullFloating + vdu, software_play);
-```
-
-## Nati expugnacior nympha milia nascuntur amico
-
-Multis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri
-sunt florem.
-
-Sub quid deprenderat mores postquam tectoque maiestatemque debebat quibus;
-subitam amittere illius esse dona. Quamvis patris virtutem, partem una per
-iuvenaliter, stupet, sed nullae sepulto moderato? Nec phaedimus aequoris dixit.
-Hic bis parenti: e petunt satis.
+Praesent cursus est eget leo finibus ultrices. Maecenas nec bibendum ipsum, feugiat consequat leo. Aliquam feugiat volutpat fermentum. In hendrerit consectetur tortor, ac pretium est rhoncus in. Nunc id dolor pellentesque, scelerisque dolor id, ultricies augue. Donec odio odio, rutrum sed purus non, lacinia hendrerit sem. Sed at convallis arcu. Aliquam eget scelerisque nibh. Maecenas scelerisque nisi quis tortor gravida commodo. Nullam finibus feugiat purus, vel malesuada velit aliquam id.
