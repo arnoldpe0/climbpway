@@ -69,7 +69,7 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "standalone",
+        display: "fullscreen",
         icons: [
           {
             src: "/logos/logo-192x192.png",
