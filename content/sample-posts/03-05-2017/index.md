@@ -1,5 +1,5 @@
 ---
-title: "Sex Panther"
+title: "Vision Quest"
 cover: "https://pics.me.me/this-is-a-little-savage-memegenerator-net-21740241.png"
 date: "01/01/2017"
 category: "slab"
