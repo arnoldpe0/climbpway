@@ -8,8 +8,8 @@ const MAPBOX_STYLE = 'mapbox://styles/arnoldpe0/cjcp5p9cc3wof2rpos2ynja10';
 export default class Map extends Component {
   state = {
     viewport: {
-      width: 1000,
-      height: 1000,
+      width: 100,
+      height: 100,
       latitude: 43.1029,
       longitude: -71.1794,
       zoom: 16
