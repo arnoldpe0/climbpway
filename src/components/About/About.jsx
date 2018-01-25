@@ -1,24 +1,25 @@
 import React, { Component } from "react";
 import "./About.css";
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
+import ReactMapGL from 'react-map-gl';
 
-const Map = ReactMapboxGl({
-  accessToken: "pk.eyJ1IjoiYXJub2xkcGUwIiwiYSI6ImNqY3A1aGprdjJkZzAydm1yZ3pkbm1haTkifQ.et31REUJlsMFZPvegp447g"
-});
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiYXJub2xkcGUwIiwiYSI6ImNqY3A1aGprdjJkZzAydm1yZ3pkbm1haTkifQ.et31REUJlsMFZPvegp447g';
 
 class About extends Component {
+  state = {
+    viewport: {
+      width: 400,
+      height: 400,
+      latitude: 37.7577,
+      longitude: -122.4376,
+      zoom: 8
+    }
+  };
   render() {
     return (
-      <Map
-      center={[-71.1820,43.1020]}
-      zoom={[15]}
-      style="mapbox://styles/arnoldpe0/cjcp5p9cc3wof2rpos2ynja10"
-      containerStyle={{
-        height: "100vh",
-        width: "100vw"
-      }}>
-        
-    </Map>
+      <ReactMapGL
+        {...this.state.viewport}
+        mapboxApiAccessToken={MAPBOX_TOKEN} onViewportChange={(viewport) => this.setState({viewport})}
+      />
     );
   }
 }
