@@ -10,8 +10,8 @@ exports.components = {
   "component---cache-dev-404-page-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\dev-404-page.js")),
   "component---src-templates-route-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\route.js")),
   "component---src-templates-area-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\area.js")),
-  "component---src-pages-index-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js")),
-  "component---src-pages-image-api-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\image-api.js"))
+  "component---src-pages-image-api-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\image-api.js")),
+  "component---src-pages-index-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js"))
 }
 
 exports.json = {
@@ -30,7 +30,7 @@ exports.json = {
   "layout-index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
   "areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis-de.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis-de.json"),
   "layout-index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json"),
+  "image-api.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\image-api.json"),
   "layout-index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "image-api.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\image-api.json")
+  "index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json")
 }

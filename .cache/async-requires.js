@@ -5,8 +5,8 @@ exports.components = {
   "component---cache-dev-404-page-js": require("gatsby-module-loader?name=component---cache-dev-404-page-js!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\dev-404-page.js"),
   "component---src-templates-route-js": require("gatsby-module-loader?name=component---src-templates-route-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\route.js"),
   "component---src-templates-area-js": require("gatsby-module-loader?name=component---src-templates-area-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\area.js"),
-  "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js"),
-  "component---src-pages-image-api-js": require("gatsby-module-loader?name=component---src-pages-image-api-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\image-api.js")
+  "component---src-pages-image-api-js": require("gatsby-module-loader?name=component---src-pages-image-api-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\image-api.js"),
+  "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js")
 }
 
 exports.json = {
@@ -25,9 +25,9 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
   "areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis-de.json": require("gatsby-module-loader?name=path---areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis-de!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis-de.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "index.json": require("gatsby-module-loader?name=path---index!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json"),
+  "image-api.json": require("gatsby-module-loader?name=path---image-api!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\image-api.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "image-api.json": require("gatsby-module-loader?name=path---image-api!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\image-api.json")
+  "index.json": require("gatsby-module-loader?name=path---index!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json")
 }
 
 exports.layouts = {
