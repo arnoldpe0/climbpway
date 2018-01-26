@@ -1,0 +1,65 @@
+[
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "dev-404-page.json",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-templates-route-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "routes-c-7-s-nv-hy-zl-ns-8-ek-6-a-mce-y-6-go.json",
+        "path": "/routes/c7sNvHyZlNS8ek6AMceY6go/"
+    },
+    {
+        "componentChunkName": "component---src-templates-route-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "routes-c-25-yq-j-0-jx-8-mme-ki-4-uso-oauk.json",
+        "path": "/routes/c25yqJ0jx8MmeKI4USOOauk/"
+    },
+    {
+        "componentChunkName": "component---src-templates-route-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "routes-c-7-s-nv-hy-zl-ns-8-ek-6-a-mce-y-6-go-de.json",
+        "path": "/routes/c7sNvHyZlNS8ek6AMceY6go___de/"
+    },
+    {
+        "componentChunkName": "component---src-templates-route-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "routes-c-25-yq-j-0-jx-8-mme-ki-4-uso-oauk-de.json",
+        "path": "/routes/c25yqJ0jx8MmeKI4USOOauk___de/"
+    },
+    {
+        "componentChunkName": "component---src-templates-area-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis.json",
+        "path": "/areas/c4YSO3zuKoEwAIscCOsMIIS/"
+    },
+    {
+        "componentChunkName": "component---src-templates-area-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "areas-c-4-yso-3-zu-ko-ew-a-isc-c-os-miis-de.json",
+        "path": "/areas/c4YSO3zuKoEwAIscCOsMIIS___de/"
+    },
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-image-api-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "image-api.json",
+        "path": "/image-api/"
+    }
+]
