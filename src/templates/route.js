@@ -13,7 +13,7 @@ class RouteTemplate extends React.Component {
   render() {
     const route = this.props.data.contentfulRoute
     const {
-      routeName: { routeName },
+      routeName,
       routeDescription,
       rating,
       image,
@@ -27,19 +27,22 @@ class RouteTemplate extends React.Component {
             alignItems: `center`,
           }}
         >
+        
           <Img resolutions={image.resolutions} />
-          <h4>{routeName}</h4>
         </div>
-        <h1>{routeName}</h1>
+        
         <div>
-          <span>Rating: {rating}stars</span>
+          <h3>{routeName}</h3>
+          <span>Rating: {rating} Stars</span>
+          <br/>
+          <span>Description</span>
           <div
             dangerouslySetInnerHTML={{
               __html: routeDescription.childMarkdownRemark.html,
             }}
           />
           <div>
-            <span>Other Routes: </span>
+            <span>Areas: </span>
             <ul>
               {areas.map((area, i) => (
                 <li key={i}>

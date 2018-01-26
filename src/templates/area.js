@@ -12,7 +12,7 @@ const propTypes = {
 class AreaTemplate extends React.Component {
   render() {
     const area = this.props.data.contentfulArea
-    const { title: { title }, routes, icon } = area
+    const { title, routes, icon } = area
     const iconImg = icon.resolutions
     return (
       <div>
@@ -23,6 +23,7 @@ class AreaTemplate extends React.Component {
             marginBottom: rhythm(1 / 2),
           }}
         >
+          
           <Img
             style={{
               height: iconImg.height,
@@ -31,10 +32,10 @@ class AreaTemplate extends React.Component {
             }}
             resolutions={iconImg}
           />
-          <h4 style={{ marginBottom: 0 }}>{title}</h4>
         </div>
-        <h1>{title}</h1>
+        
         <div>
+          <h3>{title}</h3>
           <span>Routes</span>
           <ul>
             {routes &&

@@ -8,7 +8,7 @@
       "component": "C:/Users/Peter Arnold/code/climbpway/.cache/dev-404-page.js",
       "componentChunkName": "component---cache-dev-404-page-js",
       "context": {},
-      "updatedAt": 1516996063293,
+      "updatedAt": 1517001118774,
       "pluginCreator___NODE": "Plugin dev-404-page",
       "pluginCreatorId": "Plugin dev-404-page",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/.cache/dev-404-page.js",
@@ -17,7 +17,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "38317859405b0676f4875fe7e0d3265f",
+        "contentDigest": "983e581a3212f4ee88516ad254ad0965",
         "owner": "internal-data-bridge"
       }
     },
@@ -538,12 +538,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-01-26T19:47:39.607Z",
+      "buildTime": "2018-01-26T21:11:54.953Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "38977ff1676e848e5a008e96f998b1b2",
+        "contentDigest": "d78f5311ec320df7e0ca77f02bea163f",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -565,7 +565,8 @@
       "title": "firetower",
       "icon___NODE": "c6M6EKxMtOgm8ScMOASs6Ao",
       "routes___NODE": [
-        "c25yqJ0jx8MmeKI4USOOauk"
+        "c25yqJ0jx8MmeKI4USOOauk",
+        "c7sNvHyZlNS8ek6AMceY6go"
       ],
       "route___NODE": [
         "c7sNvHyZlNS8ek6AMceY6go",
@@ -574,12 +575,12 @@
       "id": "c4YSO3zuKoEwAIscCOsMIIS",
       "contentful_id": "4YSO3zuKoEwAIscCOsMIIS",
       "createdAt": "2018-01-26T18:10:11.418Z",
-      "updatedAt": "2018-01-26T19:01:52.054Z",
+      "updatedAt": "2018-01-26T21:11:17.509Z",
       "parent": "area",
       "children": [],
       "internal": {
         "type": "ContentfulArea",
-        "contentDigest": "6b9961cf8aa9f60587ff130daf8f5f29",
+        "contentDigest": "23416b635c3ca30d7a7e6a6bcb473b1e",
         "owner": "gatsby-source-contentful"
       },
       "node_locale": "en-US"
@@ -588,7 +589,8 @@
       "title": "firetower",
       "icon___NODE": "c6M6EKxMtOgm8ScMOASs6Ao___de",
       "routes___NODE": [
-        "c25yqJ0jx8MmeKI4USOOauk___de"
+        "c25yqJ0jx8MmeKI4USOOauk___de",
+        "c7sNvHyZlNS8ek6AMceY6go___de"
       ],
       "route___NODE": [
         "c7sNvHyZlNS8ek6AMceY6go___de",
@@ -597,12 +599,12 @@
       "id": "c4YSO3zuKoEwAIscCOsMIIS___de",
       "contentful_id": "4YSO3zuKoEwAIscCOsMIIS",
       "createdAt": "2018-01-26T18:10:11.418Z",
-      "updatedAt": "2018-01-26T19:01:52.054Z",
+      "updatedAt": "2018-01-26T21:11:17.509Z",
       "parent": "area",
       "children": [],
       "internal": {
         "type": "ContentfulArea",
-        "contentDigest": "49706eb73a6f21a20f1529ffc2a9fa99",
+        "contentDigest": "f3b13ac4e2e9e84b063118f7dd351f35",
         "owner": "gatsby-source-contentful"
       },
       "node_locale": "de"
@@ -657,6 +659,9 @@
         "c4YSO3zuKoEwAIscCOsMIIS"
       ],
       "image___NODE": "c1NaNnuJ5Resq0ekIEAGGAI",
+      "area___NODE": [
+        "c4YSO3zuKoEwAIscCOsMIIS"
+      ],
       "routeDescription___NODE": "c7sNvHyZlNS8ek6AMceY6gorouteDescriptionTextNode",
       "id": "c7sNvHyZlNS8ek6AMceY6go",
       "contentful_id": "7sNvHyZlNS8ek6AMceY6go",
@@ -668,7 +673,7 @@
       ],
       "internal": {
         "type": "ContentfulRoute",
-        "contentDigest": "410a58afc91257a1dc61b51b4be7b072",
+        "contentDigest": "d436c5bc991b9013f51e222220dd51aa",
         "owner": "gatsby-source-contentful"
       },
       "node_locale": "en-US"
@@ -680,6 +685,9 @@
         "c4YSO3zuKoEwAIscCOsMIIS"
       ],
       "image___NODE": "xVMFqiWQxw0gAkcI6GuwA",
+      "area___NODE": [
+        "c4YSO3zuKoEwAIscCOsMIIS"
+      ],
       "routeDescription___NODE": "c25yqJ0jx8MmeKI4USOOaukrouteDescriptionTextNode",
       "id": "c25yqJ0jx8MmeKI4USOOauk",
       "contentful_id": "25yqJ0jx8MmeKI4USOOauk",
@@ -691,7 +699,7 @@
       ],
       "internal": {
         "type": "ContentfulRoute",
-        "contentDigest": "9c90a8e5b2217a38baf14a60f39e7625",
+        "contentDigest": "82bd2a1342febb01d6d91243086e4a0c",
         "owner": "gatsby-source-contentful"
       },
       "node_locale": "en-US"
@@ -733,6 +741,9 @@
         "c4YSO3zuKoEwAIscCOsMIIS___de"
       ],
       "image___NODE": "c1NaNnuJ5Resq0ekIEAGGAI___de",
+      "area___NODE": [
+        "c4YSO3zuKoEwAIscCOsMIIS___de"
+      ],
       "routeDescription___NODE": "c7sNvHyZlNS8ek6AMceY6go___derouteDescriptionTextNode",
       "id": "c7sNvHyZlNS8ek6AMceY6go___de",
       "contentful_id": "7sNvHyZlNS8ek6AMceY6go",
@@ -744,7 +755,7 @@
       ],
       "internal": {
         "type": "ContentfulRoute",
-        "contentDigest": "c14e159dafe8c5ffa83b92ed4eca1203",
+        "contentDigest": "6c00268dd1501b09ab735a083bad04d8",
         "owner": "gatsby-source-contentful"
       },
       "node_locale": "de"
@@ -756,6 +767,9 @@
         "c4YSO3zuKoEwAIscCOsMIIS___de"
       ],
       "image___NODE": "xVMFqiWQxw0gAkcI6GuwA___de",
+      "area___NODE": [
+        "c4YSO3zuKoEwAIscCOsMIIS___de"
+      ],
       "routeDescription___NODE": "c25yqJ0jx8MmeKI4USOOauk___derouteDescriptionTextNode",
       "id": "c25yqJ0jx8MmeKI4USOOauk___de",
       "contentful_id": "25yqJ0jx8MmeKI4USOOauk",
@@ -767,7 +781,7 @@
       ],
       "internal": {
         "type": "ContentfulRoute",
-        "contentDigest": "388e602361bbc974c14c65cbd3864981",
+        "contentDigest": "57e09d3df0e67f2093b8adb64949cb73",
         "owner": "gatsby-source-contentful"
       },
       "node_locale": "de"
@@ -1050,7 +1064,7 @@
       "context": {
         "id": "c7sNvHyZlNS8ek6AMceY6go"
       },
-      "updatedAt": 1516996063309,
+      "updatedAt": 1517001118792,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/templates/route.js",
@@ -1059,7 +1073,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "16e021aee15f737231f86918ac068d0c",
+        "contentDigest": "af246d477dbd9e2fcf26b1d0597fadf3",
         "owner": "internal-data-bridge"
       }
     },
@@ -1073,7 +1087,7 @@
       "context": {
         "id": "c25yqJ0jx8MmeKI4USOOauk"
       },
-      "updatedAt": 1516996063309,
+      "updatedAt": 1517001118792,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/templates/route.js",
@@ -1082,7 +1096,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8ffd4f9fa106b2234358309433501ef4",
+        "contentDigest": "6d1439689c8fee8ec99b7805d5a2e877",
         "owner": "internal-data-bridge"
       }
     },
@@ -1096,7 +1110,7 @@
       "context": {
         "id": "c7sNvHyZlNS8ek6AMceY6go___de"
       },
-      "updatedAt": 1516996063309,
+      "updatedAt": 1517001118793,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/templates/route.js",
@@ -1105,7 +1119,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "39cce9e679b5311293400819f3dfc03c",
+        "contentDigest": "4630c6ea3e7706154ec773362b428fbc",
         "owner": "internal-data-bridge"
       }
     },
@@ -1119,7 +1133,7 @@
       "context": {
         "id": "c25yqJ0jx8MmeKI4USOOauk___de"
       },
-      "updatedAt": 1516996063309,
+      "updatedAt": 1517001118793,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/templates/route.js",
@@ -1128,7 +1142,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "75340550518f217755986ac4d34ae929",
+        "contentDigest": "8e66cd2af2919904c2b4e69484839fa0",
         "owner": "internal-data-bridge"
       }
     },
@@ -1142,7 +1156,7 @@
       "context": {
         "id": "c4YSO3zuKoEwAIscCOsMIIS"
       },
-      "updatedAt": 1516996063309,
+      "updatedAt": 1517001118795,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/templates/area.js",
@@ -1151,7 +1165,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8358df058c5cd8cca2f58f1586bb28a3",
+        "contentDigest": "eeb5f1115f32d0b6e54cc20c99208ace",
         "owner": "internal-data-bridge"
       }
     },
@@ -1165,7 +1179,7 @@
       "context": {
         "id": "c4YSO3zuKoEwAIscCOsMIIS___de"
       },
-      "updatedAt": 1516996063309,
+      "updatedAt": 1517001118796,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/templates/area.js",
@@ -1174,7 +1188,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a6dea0f75cffe50e20440adce5fd9c96",
+        "contentDigest": "e338eafc9ebbf3a27454d0ce9c80bd6d",
         "owner": "internal-data-bridge"
       }
     },
@@ -1186,7 +1200,7 @@
       "component": "C:/Users/Peter Arnold/code/climbpway/src/pages/image-api.js",
       "componentChunkName": "component---src-pages-image-api-js",
       "context": {},
-      "updatedAt": 1516996063335,
+      "updatedAt": 1517001118812,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/pages/image-api.js",
@@ -1195,7 +1209,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "559b6020c461668c9cb3cab9d6d2a8d1",
+        "contentDigest": "381f998a79c8145ff0a5b46f62733b6f",
         "owner": "internal-data-bridge"
       }
     },
@@ -1207,7 +1221,7 @@
       "component": "C:/Users/Peter Arnold/code/climbpway/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "updatedAt": 1516996063337,
+      "updatedAt": 1517001118815,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "C:/Users/Peter Arnold/code/climbpway/src/pages/index.js",
@@ -1216,7 +1230,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1ada0897b5f7898b4198dbb6508a4eb6",
+        "contentDigest": "e2d95f1afc97dd5029dade66da87ea77",
         "owner": "internal-data-bridge"
       }
     }
@@ -1224,7 +1238,7 @@
   "status": {
     "plugins": {
       "gatsby-source-contentful": {
-        "g4cmaex40blz": "w5ZGw6JFwqZmVcKsE8Kow4grw45QdyYnelEZIW5jSyYsRcKqw4TDncKhPBVlfcKqw7ofGWImdijCncKUw5DDr8KEw7wZw5pYHRrDpzQVF1lvTmTDq0xFdsO4wqg2w7tLRGLCosOYC8KGwqIiaw"
+        "g4cmaex40blz": "w5ZGw6JFwqZmVcKsE8Kow4grw45QdyZ5w5jDgcObwqbCgCrCmcK5YMKcw5N4O23ChsKBOMObBMK9C8KoDsO9w4XDh8KyOMKcwo8fwpnDkAHCmS8awpTCqMOdV8KQwonCp0oNw65Zw6vChsOlwpbDhMKwJcOMwop2BsKtUsKIEQ"
       }
     },
     "PLUGINS_HASH": "ad1d8329c10c13e2fb13d42e817a3034"
@@ -1251,7 +1265,8 @@
         "/areas/c4YSO3zuKoEwAIscCOsMIIS/"
       ],
       "c7sNvHyZlNS8ek6AMceY6go": [
-        "/routes/c7sNvHyZlNS8ek6AMceY6go/"
+        "/routes/c7sNvHyZlNS8ek6AMceY6go/",
+        "/areas/c4YSO3zuKoEwAIscCOsMIIS/"
       ],
       "c7sNvHyZlNS8ek6AMceY6gorouteDescriptionTextNode": [
         "/routes/c7sNvHyZlNS8ek6AMceY6go/"
@@ -1264,7 +1279,8 @@
         "/"
       ],
       "c7sNvHyZlNS8ek6AMceY6go___de": [
-        "/routes/c7sNvHyZlNS8ek6AMceY6go___de/"
+        "/routes/c7sNvHyZlNS8ek6AMceY6go___de/",
+        "/areas/c4YSO3zuKoEwAIscCOsMIIS___de/"
       ],
       "c7sNvHyZlNS8ek6AMceY6go___derouteDescriptionTextNode": [
         "/routes/c7sNvHyZlNS8ek6AMceY6go___de/"
@@ -1273,8 +1289,7 @@
         "/routes/c7sNvHyZlNS8ek6AMceY6go___de/"
       ],
       "c1NaNnuJ5Resq0ekIEAGGAI___de": [
-        "/routes/c7sNvHyZlNS8ek6AMceY6go___de/",
-        "/"
+        "/routes/c7sNvHyZlNS8ek6AMceY6go___de/"
       ],
       "c4YSO3zuKoEwAIscCOsMIIS___de": [
         "/routes/c7sNvHyZlNS8ek6AMceY6go___de/",
@@ -1292,11 +1307,11 @@
         "/routes/c25yqJ0jx8MmeKI4USOOauk___de/"
       ],
       "xVMFqiWQxw0gAkcI6GuwA___de": [
-        "/routes/c25yqJ0jx8MmeKI4USOOauk___de/",
-        "/"
+        "/routes/c25yqJ0jx8MmeKI4USOOauk___de/"
       ],
       "c6M6EKxMtOgm8ScMOASs6Ao": [
-        "/areas/c4YSO3zuKoEwAIscCOsMIIS/"
+        "/areas/c4YSO3zuKoEwAIscCOsMIIS/",
+        "/"
       ],
       "c6M6EKxMtOgm8ScMOASs6Ao___de": [
         "/areas/c4YSO3zuKoEwAIscCOsMIIS___de/"
@@ -1310,6 +1325,9 @@
         "/image-api/"
       ],
       "ContentfulRoute": [
+        "/"
+      ],
+      "ContentfulArea": [
         "/"
       ]
     }

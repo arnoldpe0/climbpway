@@ -31,7 +31,36 @@ const Route = ({ node }) => (
             />
           )}
         </div>
-        <div style={{ flex: 1 }}>{node.routeName.routeName}</div>
+        <div style={{ flex: 1 }}>{node.routeName}</div>
+      </div>
+    </Link>
+  </div>
+)
+
+const Area = ({ node }) => (
+  <div>
+    <Link
+      style={{ color: `inherit`, textDecoration: `none` }}
+      to={`/areas/${node.id}/`}
+    >
+      <div
+        style={{
+          display: `flex`,
+          alignItems: `center`,
+          borderBottom: `1px solid lightgray`,
+          paddingBottom: rhythm(1 / 2),
+          marginBottom: rhythm(1 / 2),
+        }}
+      >
+        <div style={{ marginRight: rhythm(1 / 2) }}>
+          {node.icon.resolutions.src && (
+            <Img
+              style={{ margin: 0 }}
+              resolutions={node.icon.resolutions}
+            />
+          )}
+        </div>
+        <div style={{ flex: 1 }}>{node.title}</div>
       </div>
     </Link>
   </div>
@@ -39,37 +68,21 @@ const Route = ({ node }) => (
 
 class IndexPage extends React.Component {
   render() {
-    const usRouteEdges = this.props.data.us.edges
-    const deRouteEdges = this.props.data.german.edges
+    const usRouteEdges = this.props.data.routes.edges
+    const areaEdges = this.props.data.areas.edges
     return (
       <div style={{ marginBottom: rhythm(2) }}>
-        <h2>Gatsby's integration with the Contentful Image API</h2>
-        <Link to="/image-api/">See examples</Link>
-        <br />
-        <br />
-        <br />
-        <h2>Localization</h2>
-        <p>
-          The <code>gatsby-source-contentful</code> plugin offers full support
-          for Contentful's localization features. Our sample space includes
-          routes localized into both English and German.
-        </p>
-        <p>
-          An entry and asset node are created for each locale following fallback
-          rules for missing localization. In addition, each node has an
-          additional field added, <code>node_locale</code> so you can select for
-          nodes from a single locale
-        </p>
-        <h3>en-US</h3>
+        
+        <h3>Routes</h3>
         {usRouteEdges.map(({ node }, i) => (
           <Route node={node} key={node.id} />
         ))}
-        <br />
-        <br />
-        <h3>de</h3>
-        {deRouteEdges.map(({ node }, i) => (
-          <Route node={node} key={node.id} />
+
+        <h3>Areas</h3>
+        {areaEdges.map(({ node }, i) => (
+          <Area node={node} key={node.id} />
         ))}
+        
       </div>
     )
   }
@@ -81,7 +94,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query PageQuery {
-    us: allContentfulRoute(filter: { node_locale: { eq: "en-US" } }) {
+    routes: allContentfulRoute(filter: { node_locale: { eq: "en-US" } }) {
       edges {
         node {
           id
@@ -94,12 +107,12 @@ export const pageQuery = graphql`
         }
       }
     }
-    german: allContentfulRoute(filter: { node_locale: { eq: "de" } }) {
+    areas: allContentfulArea(filter: { node_locale: { eq: "en-US" } }) {
       edges {
         node {
           id
-          routeName
-          image {
+          title
+          icon {
             resolutions(width: 75) {
               ...GatsbyContentfulResolutions
             }
