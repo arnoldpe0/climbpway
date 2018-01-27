@@ -9,43 +9,60 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 }
 
+const Route = ({ node }) => (
+  <div>
+    <Link
+      style={{ color: `inherit`, textDecoration: `none` }}
+      to={`/routes/${node.id}/`}
+    >
+      <div
+        style={{
+          display: `flex`,
+          alignItems: `center`,
+          borderBottom: `1px solid lightgray`,
+          paddingBottom: rhythm(1 / 2),
+          marginBottom: rhythm(1 / 2),
+        }}
+      >
+        <div style={{ marginRight: rhythm(1 / 2) }}>
+          {node.media[0].resolutions.src && (
+            <Img
+              style={{ margin: 0 }}
+              resolutions={node.media[0].resolutions}
+            />
+          )}
+        </div>
+        <div style={{ flex: 1 }}>{node.title}</div>
+      </div>
+    </Link>
+  </div>
+)
+
 class AreaTemplate extends React.Component {
   render() {
     const area = this.props.data.contentfulArea
-    const { title, description, parent, media } = area
+    const { title, description, parent, media, routes } = area
     return (
       <div>
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            marginBottom: rhythm(1 / 2),
-          }}
-        >
-          <Img
-            style={{
-              height: media[0].resolutions.height,
-              width: media[0].resolutions.width,
-              marginRight: rhythm(1 / 2),
+        <div>
+          
+        </div>
+        
+        <Img resolutions={media[0].resolutions} />
+        <div>
+          <h3>{title}</h3>
+          <br/>
+          <span>Description</span>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: description.childMarkdownRemark.html,
             }}
-            resolutions={media[0].resolutions}
           />
         </div>
         
-        {/* <div>
-          <h3>{title}</h3>
-          <span>Routes</span>
-          <ul>
-            {routes &&
-              routes.map((r, i) => (
-                <li key={i}>
-                  <Link to={`/routes/${r.id}`}>
-                    {r.title}
-                  </Link>
-                </li>
-              ))}
-          </ul>
-        </div> */}
+        {routes.map((route) =>
+          <Route node={route} key={route.id}/>
+        )}
       </div>
     )
   }
@@ -77,6 +94,31 @@ export const pageQuery = graphql`
           srcSet
         }
       }
+      routes {
+          id
+          title
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+          
+          area {
+            id
+          }
+          grade
+          rating
+          tags
+          faperson {
+            id
+          }
+          fadate
+          media {
+            resolutions {
+              ...GatsbyContentfulResolutions
+            }
+          }
+        }
     }
   }
 `

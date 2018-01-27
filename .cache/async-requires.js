@@ -5,8 +5,8 @@ exports.components = {
   "component---cache-dev-404-page-js": require("gatsby-module-loader?name=component---cache-dev-404-page-js!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\dev-404-page.js"),
   "component---src-templates-route-js": require("gatsby-module-loader?name=component---src-templates-route-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\route.js"),
   "component---src-templates-area-js": require("gatsby-module-loader?name=component---src-templates-area-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\area.js"),
-  "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js"),
-  "component---src-pages-map-js": require("gatsby-module-loader?name=component---src-pages-map-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\map.js")
+  "component---src-pages-map-js": require("gatsby-module-loader?name=component---src-pages-map-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\map.js"),
+  "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js")
 }
 
 exports.json = {
@@ -33,9 +33,9 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
   "areas-c-1-dl-tyc-4-j-bucs-m-0-ek-0-w-ioaw-de.json": require("gatsby-module-loader?name=path---areas-c-1-dl-tyc-4-j-bucs-m-0-ek-0-w-ioaw-de!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\areas-c-1-dl-tyc-4-j-bucs-m-0-ek-0-w-ioaw-de.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "index.json": require("gatsby-module-loader?name=path---index!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json"),
+  "map.json": require("gatsby-module-loader?name=path---map!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\map.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "map.json": require("gatsby-module-loader?name=path---map!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\map.json")
+  "index.json": require("gatsby-module-loader?name=path---index!C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json")
 }
 
 exports.layouts = {

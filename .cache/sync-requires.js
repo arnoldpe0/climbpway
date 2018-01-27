@@ -10,8 +10,8 @@ exports.components = {
   "component---cache-dev-404-page-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\dev-404-page.js")),
   "component---src-templates-route-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\route.js")),
   "component---src-templates-area-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\templates\\area.js")),
-  "component---src-pages-index-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js")),
-  "component---src-pages-map-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\map.js"))
+  "component---src-pages-map-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\map.js")),
+  "component---src-pages-index-js": preferDefault(require("C:\\Users\\Peter Arnold\\code\\climbpway\\src\\pages\\index.js"))
 }
 
 exports.json = {
@@ -38,7 +38,7 @@ exports.json = {
   "layout-index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
   "areas-c-1-dl-tyc-4-j-bucs-m-0-ek-0-w-ioaw-de.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\areas-c-1-dl-tyc-4-j-bucs-m-0-ek-0-w-ioaw-de.json"),
   "layout-index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json"),
+  "map.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\map.json"),
   "layout-index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\layout-index.json"),
-  "map.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\map.json")
+  "index.json": require("C:\\Users\\Peter Arnold\\code\\climbpway\\.cache\\json\\index.json")
 }
