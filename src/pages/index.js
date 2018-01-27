@@ -117,12 +117,7 @@ export const pageQuery = graphql`
           fadate
           media {
             resolutions {
-              base64
-              aspectRatio
-              width
-              height
-              src
-              srcSet
+              ...GatsbyContentfulResolutions
             }
           }
         }
@@ -143,12 +138,7 @@ export const pageQuery = graphql`
           }
           media {
             resolutions {
-              base64
-              aspectRatio
-              width
-              height
-              src
-              srcSet
+              ...GatsbyContentfulResolutions
             }
           }
         }

@@ -77,17 +77,17 @@
         "path": "/areas/c1DlTYC4JBucsM0Ek0wIOAW___de/"
     },
     {
-        "componentChunkName": "component---src-pages-image-api-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "image-api.json",
-        "path": "/image-api/"
-    },
-    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "index.json",
         "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-map-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "map.json",
+        "path": "/map/"
     }
 ]

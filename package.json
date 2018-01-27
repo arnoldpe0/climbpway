@@ -13,6 +13,7 @@
     "gatsby-source-contentful": "latest",
     "gatsby-transformer-remark": "latest",
     "lodash": "^4.16.4",
+    "react-map-gl": "^3.2.1",
     "react-typography": "^0.15.0",
     "slash": "^1.0.0",
     "typography": "^0.15.8",

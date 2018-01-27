@@ -37,7 +37,18 @@ class RouteTemplate extends React.Component {
         
         <div>
           <h3>{title}</h3>
+          <span>Area: </span>
+          <Link to={`/areas/${area.id}`}>
+            {area.title}
+          </Link>
+          <br/>
+          <span>Grade: V{grade}</span>
+          <br/>
           <span>Rating: {rating} Stars</span>
+          <br/>
+          <span>Tags: {tags}</span>
+          <br/>
+          <span>First Ascent: {faperson.firstname} {faperson.lastname} on {fadate}</span>
           <br/>
           <span>Description</span>
           <div
@@ -78,12 +89,15 @@ export const pageQuery = graphql`
       }
       area {
         id
+        title
       }
       grade
       rating
       tags
       faperson {
         id
+        firstname
+        lastname
       }
       fadate
       media {
