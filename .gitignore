@@ -5,7 +5,10 @@ node_modules
 coverage
 npm-debug.log
 
+public
+
 */**/yarn.lock
 */**/package-lock.json
 yarn-error.log
 .DS_Store
+.cache
