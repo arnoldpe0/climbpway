@@ -73,16 +73,16 @@ class IndexPage extends React.Component {
     return (
       <div style={{ marginBottom: rhythm(2) }}>
         
+        <h3>Areas</h3>
+        {areaEdges.map(({ node }, i) => (
+          <Area node={node} key={node.id} />
+        ))}
+
         <h3>Routes</h3>
         {routeEdges.map(({ node }, i) => (
           <Route node={node} key={node.id} />
         ))}
 
-        <h3>Areas</h3>
-        {areaEdges.map(({ node }, i) => (
-          <Area node={node} key={node.id} />
-        ))}
-        
       </div>
     )
   }
