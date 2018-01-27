@@ -13,11 +13,15 @@ class RouteTemplate extends React.Component {
   render() {
     const route = this.props.data.contentfulRoute
     const {
-      routeName,
-      routeDescription,
+      title,
+      description,
+      area,
+      grade,
       rating,
-      image,
-      areas,
+      tags,
+      faperson,
+      fadate
+      ,media
     } = route
     return (
       <div>
@@ -28,20 +32,20 @@ class RouteTemplate extends React.Component {
           }}
         >
         
-          <Img resolutions={image.resolutions} />
+          <Img resolutions={media[0].resolutions} />
         </div>
         
         <div>
-          <h3>{routeName}</h3>
+          <h3>{title}</h3>
           <span>Rating: {rating} Stars</span>
           <br/>
           <span>Description</span>
           <div
             dangerouslySetInnerHTML={{
-              __html: routeDescription.childMarkdownRemark.html,
+              __html: description.childMarkdownRemark.html,
             }}
           />
-          <div>
+          {/* <div>
             <span>Areas: </span>
             <ul>
               {areas.map((area, i) => (
@@ -52,7 +56,7 @@ class RouteTemplate extends React.Component {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     )
@@ -66,25 +70,31 @@ export default RouteTemplate
 export const pageQuery = graphql`
   query routeQuery($id: String!) {
     contentfulRoute(id: { eq: $id }) {
-      routeName
-      routeDescription {
+      title
+      description {
         childMarkdownRemark {
           html
         }
       }
+      area {
+        id
+      }
+      grade
       rating
-      image {
-        resolutions(width: 50, height: 50) {
+      tags
+      faperson {
+        id
+      }
+      fadate
+      media {
+        resolutions {
           base64
+          aspectRatio
+          width
+          height
           src
           srcSet
-          height
-          width
         }
-      }
-      areas {
-        id
-        title
       }
     }
   }

@@ -12,8 +12,7 @@ const propTypes = {
 class AreaTemplate extends React.Component {
   render() {
     const area = this.props.data.contentfulArea
-    const { title, routes, icon } = area
-    const iconImg = icon.resolutions
+    const { title, description, parent, media } = area
     return (
       <div>
         <div
@@ -23,18 +22,17 @@ class AreaTemplate extends React.Component {
             marginBottom: rhythm(1 / 2),
           }}
         >
-          
           <Img
             style={{
-              height: iconImg.height,
-              width: iconImg.width,
+              height: media[0].resolutions.height,
+              width: media[0].resolutions.width,
               marginRight: rhythm(1 / 2),
             }}
-            resolutions={iconImg}
+            resolutions={media[0].resolutions}
           />
         </div>
         
-        <div>
+        {/* <div>
           <h3>{title}</h3>
           <span>Routes</span>
           <ul>
@@ -42,12 +40,12 @@ class AreaTemplate extends React.Component {
               routes.map((r, i) => (
                 <li key={i}>
                   <Link to={`/routes/${r.id}`}>
-                    {r.routeName}
+                    {r.title}
                   </Link>
                 </li>
               ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     )
   }
@@ -61,18 +59,23 @@ export const pageQuery = graphql`
   query areaQuery($id: String!) {
     contentfulArea(id: { eq: $id }) {
       title
-      icon {
-        resolutions(width: 75) {
-          base64
-          src
-          srcSet
-          height
-          width
+      description {
+        childMarkdownRemark {
+          html
         }
       }
-      routes {
+      parent {
         id
-        routeName
+      }
+      media {
+        resolutions {
+          base64
+          aspectRatio
+          width
+          height
+          src
+          srcSet
+        }
       }
     }
   }

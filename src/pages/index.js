@@ -24,14 +24,14 @@ const Route = ({ node }) => (
         }}
       >
         <div style={{ marginRight: rhythm(1 / 2) }}>
-          {node.image.resolutions.src && (
+          {node.media[0].resolutions.src && (
             <Img
               style={{ margin: 0 }}
-              resolutions={node.image.resolutions}
+              resolutions={node.media[0].resolutions}
             />
           )}
         </div>
-        <div style={{ flex: 1 }}>{node.routeName}</div>
+        <div style={{ flex: 1 }}>{node.title}</div>
       </div>
     </Link>
   </div>
@@ -53,10 +53,10 @@ const Area = ({ node }) => (
         }}
       >
         <div style={{ marginRight: rhythm(1 / 2) }}>
-          {node.icon.resolutions.src && (
+          {node.media[0].resolutions.src && (
             <Img
               style={{ margin: 0 }}
-              resolutions={node.icon.resolutions}
+              resolutions={node.media[0].resolutions}
             />
           )}
         </div>
@@ -68,13 +68,13 @@ const Area = ({ node }) => (
 
 class IndexPage extends React.Component {
   render() {
-    const usRouteEdges = this.props.data.routes.edges
+    const routeEdges = this.props.data.routes.edges
     const areaEdges = this.props.data.areas.edges
     return (
       <div style={{ marginBottom: rhythm(2) }}>
         
         <h3>Routes</h3>
-        {usRouteEdges.map(({ node }, i) => (
+        {routeEdges.map(({ node }, i) => (
           <Route node={node} key={node.id} />
         ))}
 
@@ -98,10 +98,31 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          routeName
-          image {
-            resolutions(width: 75) {
-              ...GatsbyContentfulResolutions
+          title
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+          
+          area {
+            id
+          }
+          grade
+          rating
+          tags
+          faperson {
+            id
+          }
+          fadate
+          media {
+            resolutions {
+              base64
+              aspectRatio
+              width
+              height
+              src
+              srcSet
             }
           }
         }
@@ -112,9 +133,22 @@ export const pageQuery = graphql`
         node {
           id
           title
-          icon {
-            resolutions(width: 75) {
-              ...GatsbyContentfulResolutions
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+          parent {
+            id
+          }
+          media {
+            resolutions {
+              base64
+              aspectRatio
+              width
+              height
+              src
+              srcSet
             }
           }
         }
