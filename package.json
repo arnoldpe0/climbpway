@@ -1,15 +1,19 @@
 {
-  "name": "gatsby",
+  "name": "climbpway",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "firebase": "^4.9.1",
     "gatsby": "latest",
+    "gatsby-link": "^1.6.36",
+    "gatsby-plugin-react-helmet": "^2.0.4",
     "jss": "latest",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-beta.17",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-helmet": "^5.2.0",
     "react-jss": "latest"
   },
   "scripts": {
