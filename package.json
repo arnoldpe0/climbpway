@@ -1,32 +1,19 @@
 {
-  "name": "climbpway",
-  "private": true,
-  "description": "Climb Pway",
+  "name": "gatsby",
   "version": "1.0.0",
-  "author": "Peter Arnold <theperarnold@gmail.com>",
+  "private": true,
   "dependencies": {
-    "gatsby": "^1.9.172",
-    "gatsby-image": "latest",
-    "gatsby-link": "^1.6.35",
-    "gatsby-plugin-google-analytics": "latest",
-    "gatsby-plugin-offline": "latest",
-    "gatsby-source-contentful": "latest",
-    "gatsby-transformer-remark": "^1.7.30",
-    "lodash": "^4.16.4",
-    "react-map-gl": "^3.2.1",
-    "react-typography": "^0.15.0",
-    "slash": "^1.0.0",
-    "typography": "^0.15.8",
-    "typography-breakpoint-constants": "^0.14.0"
+    "gatsby": "latest",
+    "jss": "latest",
+    "material-ui": "next",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-jss": "latest"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "start": "gatsby serve"
+    "build": "gatsby build"
   }
 }

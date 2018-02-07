@@ -1,148 +1,154 @@
-import React from "react"
-import Link from "gatsby-link"
-import * as PropTypes from "prop-types"
-import { rhythm } from "../utils/typography"
-import Img from "gatsby-image"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import withRoot from '../withRoot';
 
-const propTypes = {
-  data: PropTypes.object.isRequired,
-}
+import Drawer from 'material-ui/Drawer';
+import AppBar from 'material-ui/AppBar';
+import Toolbar from 'material-ui/Toolbar';
+import List from 'material-ui/List';
+import Typography from 'material-ui/Typography';
+import IconButton from 'material-ui/IconButton';
+import Hidden from 'material-ui/Hidden';
+import Divider from 'material-ui/Divider';
+import MenuIcon from 'material-ui-icons/Menu';
+import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 
-const Route = ({ node }) => (
-  <div>
-    <Link
-      style={{ color: `inherit`, textDecoration: `none` }}
-      to={`/routes/${node.id}/`}
-    >
-      <div
-        style={{
-          display: `flex`,
-          alignItems: `center`,
-          borderBottom: `1px solid lightgray`,
-          paddingBottom: rhythm(1 / 2),
-          marginBottom: rhythm(1 / 2),
-        }}
-      >
-        <div style={{ marginRight: rhythm(1 / 2) }}>
-          {node.media[0].resolutions.src && (
-            <Img
-              style={{ margin: 0 }}
-              resolutions={node.media[0].resolutions}
-            />
-          )}
-        </div>
-        <div style={{ flex: 1 }}>{node.title}</div>
-      </div>
-    </Link>
-  </div>
-)
+const drawerWidth = 240;
 
-const Area = ({ node }) => (
-  <div>
-    <Link
-      style={{ color: `inherit`, textDecoration: `none` }}
-      to={`/areas/${node.id}/`}
-    >
-      <div
-        style={{
-          display: `flex`,
-          alignItems: `center`,
-          borderBottom: `1px solid lightgray`,
-          paddingBottom: rhythm(1 / 2),
-          marginBottom: rhythm(1 / 2),
-        }}
-      >
-        <div style={{ marginRight: rhythm(1 / 2) }}>
-          {node.media[0].resolutions.src && (
-            <Img
-              style={{ margin: 0 }}
-              resolutions={node.media[0].resolutions}
-            />
-          )}
-        </div>
-        <div style={{ flex: 1 }}>{node.title}</div>
-      </div>
-    </Link>
-  </div>
-)
+const styles = theme => ({
+  root: {
+    width: '100%',
+    height: 430,
+    marginTop: theme.spacing.unit * 3,
+    zIndex: 1,
+    overflow: 'hidden',
+  },
+  appFrame: {
+    position: 'relative',
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+  },
+  appBar: {
+    position: 'absolute',
+    marginLeft: drawerWidth,
+    [theme.breakpoints.up('md')]: {
+      width: `calc(100% - ${drawerWidth}px)`,
+    },
+  },
+  navIconHide: {
+    [theme.breakpoints.up('md')]: {
+      display: 'none',
+    },
+  },
+  drawerHeader: theme.mixins.toolbar,
+  drawerPaper: {
+    width: 250,
+    [theme.breakpoints.up('md')]: {
+      width: drawerWidth,
+      position: 'relative',
+      height: '100%',
+    },
+  },
+  content: {
+    backgroundColor: theme.palette.background.default,
+    width: '100%',
+    padding: theme.spacing.unit * 3,
+    height: 'calc(100% - 56px)',
+    marginTop: 56,
+    [theme.breakpoints.up('sm')]: {
+      height: 'calc(100% - 64px)',
+      marginTop: 64,
+    },
+  },
+});
 
-class IndexPage extends React.Component {
+class Index extends React.Component {
+  state = {
+    value: 0,
+    mobileOpen: false,
+  };
+
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+
+  handleDrawerToggle = () => {
+    this.setState({ mobileOpen: !this.state.mobileOpen });
+  };
+
   render() {
-    const routeEdges = this.props.data.routes.edges
-    const areaEdges = this.props.data.areas.edges
-    return (
-      <div style={{ marginBottom: rhythm(2) }}>
-        
-        <h3>Areas</h3>
-        {areaEdges.map(({ node }, i) => (
-          <Area node={node} key={node.id} />
-        ))}
+    const { classes, theme, value } = this.props;
 
-        <h3>Routes</h3>
-        {routeEdges.map(({ node }, i) => (
-          <Route node={node} key={node.id} />
-        ))}
-
+    const drawer = (
+      <div>
+        <div className={classes.drawerHeader} />
+        <Divider />
+        <List>{mailFolderListItems}</List>
+        <Divider />
+        <List>{otherMailFolderListItems}</List>
       </div>
-    )
+    );
+
+
+    return (
+      <div className={classes.root}>
+        <div className={classes.appFrame}>
+          <AppBar className={classes.appBar}>
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={this.handleDrawerToggle}
+                className={classes.navIconHide}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="title" color="inherit" noWrap>
+                Responsive drawer
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <Hidden mdUp>
+            <Drawer
+              variant="temporary"
+              anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+              open={this.state.mobileOpen}
+              classes={{
+                paper: classes.drawerPaper,
+              }}
+              onClose={this.handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+            >
+              {drawer}
+            </Drawer>
+          </Hidden>
+          <Hidden smDown implementation="css">
+            <Drawer
+              variant="permanent"
+              open
+              classes={{
+                paper: classes.drawerPaper,
+              }}
+            >
+              {drawer}
+            </Drawer>
+          </Hidden>
+          <main className={classes.content}>
+            <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography>
+          </main>
+        </div>
+      </div>
+    );
   }
 }
 
-IndexPage.propTypes = propTypes
+Index.propTypes = {
+  classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
+};
 
-export default IndexPage
-
-export const pageQuery = graphql`
-  query PageQuery {
-    routes: allContentfulRoute(filter: { node_locale: { eq: "en-US" } }) {
-      edges {
-        node {
-          id
-          title
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-          
-          area {
-            id
-          }
-          grade
-          rating
-          tags
-          faperson {
-            id
-          }
-          fadate
-          media {
-            resolutions {
-              ...GatsbyContentfulResolutions
-            }
-          }
-        }
-      }
-    }
-    areas: allContentfulArea(filter: { node_locale: { eq: "en-US" } }) {
-      edges {
-        node {
-          id
-          title
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-          parent {
-            id
-          }
-          media {
-            resolutions {
-              ...GatsbyContentfulResolutions
-            }
-          }
-        }
-      }
-    }
-  }
-`
+export default withRoot(withStyles(styles, { withTheme: true })(Index));
