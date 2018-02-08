@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Typography from 'material-ui/Typography';
 
 import withAuthorization from '../components/Session/withAuthorization';
 import { db } from '../firebase';
@@ -28,8 +29,12 @@ class HomePage extends Component {
 
     return (
       <div>
-        <h1>Home</h1>
-        <p>All Content Will go Here</p>
+        <Typography variant="display1" gutterBottom>
+        Home
+      </Typography>
+      <Typography variant="caption" gutterBottom>
+      All content will go here, maps routes, areas.
+      </Typography>
 
         { !!users.length && <UserList users={users} /> }
       </div>
@@ -39,7 +44,9 @@ class HomePage extends Component {
 
 const UserList = ({ users }) =>
   <div>
-    <h2>Test Firebase Data - UID's</h2>
+    <Typography variant="body2" gutterBottom>
+    Test Firebase Data - UID's
+      </Typography>
     {users.map(user =>
       <div key={user.index}>{user.index}</div>
     )}

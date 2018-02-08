@@ -3,6 +3,7 @@ import React from 'react';
 import SignInForm from '../components/SignIn';
 import { SignUpLink } from '../components/SignUp';
 import { PasswordForgetLink } from '../components/PasswordForget';
+import Typography from 'material-ui/Typography';
 
 const styles = theme => ({
   root: {
@@ -15,7 +16,10 @@ class SignInPage extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <h1>SignIn</h1>
+        <Typography variant="display1" gutterBottom>
+        SignIn
+      </Typography>
+     
         <SignInForm />
         <PasswordForgetLink />
         <SignUpLink />

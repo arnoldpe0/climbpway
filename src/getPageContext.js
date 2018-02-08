@@ -20,6 +20,14 @@ const theme = createMuiTheme({
       dark: green[900],
     },
   },
+  overrides: {
+    MuiButton: {
+      root: {
+        textTransform: 'capitalize',
+        fontWeight: '600',
+      },
+    },
+  },
 });
 
 function createPageContext() {

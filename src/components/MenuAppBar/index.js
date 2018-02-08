@@ -16,6 +16,7 @@ import Navigation from '../Navigation';
 const styles = {
   root: {
     width: '100%',
+    backgroundColor: "#F1F3F4",
   },
   flex: {
     flex: 1,
@@ -24,6 +25,8 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
+  
+  
 };
 
 class MenuAppBar extends React.Component {
@@ -35,13 +38,11 @@ class MenuAppBar extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar className={classes.root} position="static">
           <Toolbar>
             <Navigation />
           </Toolbar>
         </AppBar>
-      </div>
     );
   }
 }
