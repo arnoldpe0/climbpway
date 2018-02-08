@@ -1,10 +1,13 @@
 import React from 'react';
+import Typography from 'material-ui/Typography';
 
 import SignUpForm from '../components/SignUp';
 
 const SignUpPage = () =>
   <div>
-    <h1>SignUp</h1>
+            <Typography variant="display1" gutterBottom>
+      Sign Up
+    </Typography>
     <SignUpForm />
   </div>
 

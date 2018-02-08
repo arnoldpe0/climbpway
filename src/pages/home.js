@@ -45,7 +45,7 @@ class HomePage extends Component {
 const UserList = ({ users }) =>
   <div>
     <Typography variant="body2" gutterBottom>
-    Test Firebase Data - UID's
+    Testing Firebase Data - User ID's from realtimeDB
       </Typography>
     {users.map(user =>
       <div key={user.index}>{user.index}</div>

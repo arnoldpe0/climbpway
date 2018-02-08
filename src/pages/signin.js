@@ -17,7 +17,7 @@ class SignInPage extends React.Component {
     return (
       <div>
         <Typography variant="display1" gutterBottom>
-        SignIn
+        Sign In
       </Typography>
      
         <SignInForm />

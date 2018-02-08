@@ -9,8 +9,8 @@ import withAuthorization from '../components/Session/withAuthorization';
 const AccountPage = (props, { authUser }) =>
   <div>
     
-    <Typography variant="display2" gutterBottom>
-      Home
+    <Typography variant="display1" gutterBottom>
+      Account
     </Typography>
     
     <Typography variant="body1" gutterBottom >

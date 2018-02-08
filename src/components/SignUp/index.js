@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
+import Typography from 'material-ui/Typography';
 
 import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
@@ -140,11 +141,9 @@ class SignUpForm extends Component {
 }
 
 const SignUpLink = () =>
-  <p>
-    Don't have an account?
-    {' '}
+  <div>
     <Button color="primary" component={Link} to={routes.SIGN_UP}>Sign Up</Button>
-  </p>
+  </div>
 
 export default withRouter(SignUpForm);
 
