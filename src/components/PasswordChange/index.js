@@ -54,7 +54,7 @@ class PasswordChangeForm extends Component {
          onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
          type="password"
          placeholder="Password"
-          id="password"
+          id="passwordOne"
           label="New Password"
           variant="password"
           margin="normal"
@@ -65,7 +65,7 @@ class PasswordChangeForm extends Component {
          onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
          type="password"
          placeholder="Password"
-          id="password"
+          id="passwordTwo"
           label="Confirm New Password"
           variant="password"
           margin="normal"

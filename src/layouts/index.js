@@ -2,31 +2,47 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Reboot from 'material-ui/Reboot';
+import { withStyles } from 'material-ui/styles';
 
 import MenuAppBar from '../components/MenuAppBar';
 import withAuthentication from '../components/Session/withAuthentication';
 
-import './index.css';
+import withRoot from '../withRoot';
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Climb Pway"
-      meta={[
-        { name: 'description', content: 'Climb Pway' },
-        { name: 'keywords', content: 'Climb Pway' },
-      ]}
-    />
-    <div className="app">
+const styles = theme => ({
+  root: {
+    margin:24,
+  },
+});
+
+class TemplateWrapper extends React.Component {
+
+  render() {
+    const { classes } = this.props;
+    const { children } = this.props;
+
+    return (
+    <div>
       <Reboot />
+      <Helmet
+        title="Climb Pway"
+        meta={[
+          { name: 'description', content: 'Climb Pway' },
+          { name: 'keywords', content: 'Climb Pway' },
+        ]}
+      />
       <MenuAppBar />
-      {children()}
+      <div className={classes.root}>
+        {children()}
+      </div>
     </div>
-  </div>
-)
+    )
+  }   
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
+  classes: PropTypes.object.isRequired,
 }
 
-export default withAuthentication(TemplateWrapper)
+export default withAuthentication(withRoot(withStyles(styles)(TemplateWrapper)))

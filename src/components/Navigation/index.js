@@ -19,16 +19,16 @@ Navigation.contextTypes = {
 
 const NavigationAuth = () =>
   <div>
-    <Button component={Link} to={routes.LANDING}>Landing</Button>
-    <Button component={Link} to={routes.HOME}>Home</Button>
-    <Button component={Link} to={routes.ACCOUNT}>Account</Button>
+    <Button color="inherit" component={Link} to={routes.LANDING}>Landing</Button>
+    <Button color="inherit" component={Link} to={routes.HOME}>Home</Button>
+    <Button color="inherit" component={Link} to={routes.ACCOUNT}>Account</Button>
     <SignOutButton />
   </div>
 
 const NavigationNonAuth = () =>
   <div>
-    <Button component={Link} to={routes.LANDING}>Landing</Button>
-    <Button component={Link} to={routes.SIGN_IN}>Sign In</Button>
+    <Button color="inherit" component={Link} to={routes.LANDING}>Landing</Button>
+    <Button color="inherit" component={Link} to={routes.SIGN_IN}>Sign In</Button>
   </div>
 
 export default Navigation;

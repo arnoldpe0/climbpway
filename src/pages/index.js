@@ -3,6 +3,6 @@ import React from 'react';
 const LandingPage = () =>
   <div>
     <h1>Landing</h1>
-    <p>This is the landing page. Try and login to see content.</p>
+    <p>The Landing Page is open to everyone, even though the user isn't signed in.</p>
   </div>
 export default LandingPage;

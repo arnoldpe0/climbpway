@@ -16,8 +16,6 @@ import AccountPage from '../Account';
 import withAuthentication from '../Session/withAuthentication';
 import * as routes from '../../constants/routes';
 
-import './index.css';
-
 const App = () =>
   <Router>
     <div className="app">
