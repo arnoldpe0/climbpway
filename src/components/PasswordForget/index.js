@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Button from 'material-ui/Button';
+import TextField from 'material-ui/TextField';
 
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
@@ -44,15 +46,19 @@ class PasswordForgetForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-        <input
+
+        <TextField
           value={this.state.email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
+          id="email"
+          label="Email Address"
+          variant="email"
+          margin="normal"
         />
-        <button disabled={isInvalid} type="submit">
-          Reset My Password
-        </button>
+        
+        <Button variant="raised" color="primary" disabled={isInvalid} type="submit">Change My Email</Button>
 
         { error && <p>{error.message}</p> }
       </form>
@@ -62,7 +68,9 @@ class PasswordForgetForm extends Component {
 
 const PasswordForgetLink = () =>
   <p>
-    <Link to={routes.PASSWORD_FORGET}>Forgot Password?</Link>
+    Forgot password?
+    {' '}
+    <Button color="primary" component={Link} to={routes.PASSWORD_FORGET}>Reset Password</Button>
   </p>
 
 export {

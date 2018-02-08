@@ -3,6 +3,8 @@ import {
   Link,
   withRouter,
 } from 'react-router-dom';
+import Button from 'material-ui/Button';
+import TextField from 'material-ui/TextField';
 
 import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
@@ -75,33 +77,61 @@ class SignUpForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-        <input
+
+        <TextField
           value={username}
           onChange={event => this.setState(updateByPropertyName('username', event.target.value))}
           type="text"
           placeholder="Full Name"
+          id="username"
+          label="Full Name"
+          variant="username"
+          margin="normal"
         />
-        <input
+
+        <br/>
+
+        <TextField
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
+          id="email"
+          label="Email Address"
+          variant="email"
+          margin="normal"
         />
-        <input
+        
+        <br/>
+
+        <TextField
           value={passwordOne}
           onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
           type="password"
           placeholder="Password"
+          id="passwordOne"
+          label="Password"
+          variant="passwordOne"
+          margin="normal"
         />
-        <input
+
+        <br/>
+
+        <TextField
           value={passwordTwo}
           onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
           type="password"
           placeholder="Confirm Password"
+          id="passwordTwo"
+          label="Confirm Password"
+          variant="passwordTwo"
+          margin="normal"
         />
-        <button disabled={isInvalid} type="submit">
-          Sign Up
-        </button>
+
+        <br/>
+
+        <Button variant="raised" color="primary" disabled={isInvalid} type="submit">Sign Up</Button>
+
 
         { error && <p>{error.message}</p> }
       </form>
@@ -113,7 +143,7 @@ const SignUpLink = () =>
   <p>
     Don't have an account?
     {' '}
-    <Link to={routes.SIGN_UP}>Sign Up</Link>
+    <Button color="primary" component={Link} to={routes.SIGN_UP}>Sign Up</Button>
   </p>
 
 export default withRouter(SignUpForm);

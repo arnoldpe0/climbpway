@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import Button from 'material-ui/Button';
+import TextField from 'material-ui/TextField';
 
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
@@ -58,23 +60,39 @@ class SignInForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-        <input
+
+        <TextField
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
+          id="email"
+          label="Email"
+          variant="email"
+          autoComplete="current-email"
+          margin="normal"
         />
-        <input
+
+        <br/>
+
+        <TextField
           value={password}
           onChange={event => this.setState(updateByPropertyName('password', event.target.value))}
           type="password"
           placeholder="Password"
+          id="password"
+          label="Password"
+          variant="password"
+          autoComplete="current-password"
+          margin="normal"
         />
-        <button disabled={isInvalid} type="submit">
-          Sign In
-        </button>
+
+        <br/>
+
+        <Button variant="raised" color="primary" disabled={isInvalid} type="submit">Sign In</Button>
 
         { error && <p>{error.message}</p> }
+
       </form>
     );
   }
