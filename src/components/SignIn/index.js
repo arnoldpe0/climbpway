@@ -2,11 +2,20 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
+import Paper from 'material-ui/Paper';
 
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
+
+const styles = theme => ({
+  root: theme.mixins.gutters({
+    paddingTop: 16,
+    paddingBottom: 16,
+    marginTop: theme.spacing.unit * 3,
+  }),
+});
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value,
