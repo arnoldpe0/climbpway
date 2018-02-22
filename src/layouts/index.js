@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import Reboot from 'material-ui/Reboot';
 import { withStyles } from 'material-ui/styles';
 
 import MenuAppBar from '../components/MenuAppBar';
@@ -23,7 +22,6 @@ class TemplateWrapper extends React.Component {
 
     return (
     <div>
-      <Reboot />
       <Helmet
         title="Climb Pway"
         meta={[

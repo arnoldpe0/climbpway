@@ -12,8 +12,12 @@ import withRoot from '../withRoot';
 
 const styles = theme => ({
   root: {
-    margin: 24,
+    justifyContent: "center",
+  },
+  card: {
+    padding: 24,
     maxWidth: 360,
+    margin: "auto",
     
   },
 });
@@ -23,8 +27,8 @@ class SignInPage extends React.Component {
   render(){
     const { classes } = this.props;
     return (
-      <div>
-        <Paper className={classes.root} elevation={4}>
+      <div className={classes.root}>
+        <Paper className={classes.card} elevation={4}>
           <Typography variant="display1" gutterBottom>
           Sign In
         </Typography>

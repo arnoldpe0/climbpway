@@ -44,8 +44,8 @@ class NavigationNonAuth extends React.Component {
     return (
       <div>
         
-        <Button  color="primary" component={Link} to={routes.LANDING}>Landing</Button >
-        <Button  color="primary" component={Link} to={routes.SIGN_IN}>Sign In</Button>
+        <Button  color="primary" component={Link} to={routes.LANDING}>Landing</Button>
+        <Button variant="raised" color="primary" component={Link} to={routes.SIGN_IN}>Sign In</Button>
         
       </div>
     );
