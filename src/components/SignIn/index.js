@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
 import { withRouter } from 'react-router-dom';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
-import Paper from 'material-ui/Paper';
-
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
@@ -32,7 +32,9 @@ class SignInForm extends Component {
     super(props);
 
     this.state = { ...INITIAL_STATE };
+    this.props = props;
   }
+  
 
   onSubmit = (event) => {
     const {
@@ -57,6 +59,8 @@ class SignInForm extends Component {
   }
 
   render() {
+    
+
     const {
       email,
       password,
@@ -107,4 +111,4 @@ class SignInForm extends Component {
   }
 }
 
-export default withRouter(SignInForm);
+export default withRouter(withStyles(styles)(SignInForm));
