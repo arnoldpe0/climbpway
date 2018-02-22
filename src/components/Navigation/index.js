@@ -41,7 +41,6 @@ const NavigationAuth = () =>
 
 class NavigationNonAuth extends React.Component {
   render() {
-    const { classes } = this.props;
     return (
       <div>
         
@@ -52,9 +51,5 @@ class NavigationNonAuth extends React.Component {
     );
   }
 }
-
-NavigationNonAuth.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
 export default Navigation;
