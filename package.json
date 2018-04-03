@@ -1,12 +1,13 @@
 {
-  "name": "with-apollo-auth",
-  "version": "0.0.0",
-  "author": "",
-  "license": "ISC",
+  "name": "climbpway",
+  "version": "1.0.0",
+  "author": "Peter Arnold <arnoldpe0@gmail.com",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "immutable-start": "npm run build && npm run start",
     "test": "NODE_ENV=test ava"
   },
   "dependencies": {
