@@ -34,7 +34,7 @@ class Index extends React.Component {
   render () {
     return (
       <div>
-        Hello {this.props.loggedInUser.user.name}!<br />
+        Hello {this.props.loggedInUser.user.name} thanks for logging in!<br />
         <button onClick={this.signout}>Sign out</button>
       </div>
     )
